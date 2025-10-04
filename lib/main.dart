@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx3/view/home.dart';
+import 'package:flutter_getx3/view/page1.dart';
+import 'package:flutter_getx3/view/page2.dart';
+import 'package:flutter_getx3/view/page3.dart';
+import 'package:flutter_getx3/view/page4.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +15,14 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return GetMaterialApp(
+      home: const Home(),
+      getPages: [
+        GetPage(name: "/Page1", page: () => Page1()),
+        GetPage(name: "/Page2", page: () => Page2()),
+        GetPage(name: "/Page3", page: () => Page3()),
+        GetPage(name: "/Page4", page: () => Page4()),
+      ],
     );
   }
 }
