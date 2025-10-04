@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
               onPressed: () {
                 Get.toNamed("/Page1");
               },
-              child: Text("Page1"),
+              child: Text("Page1 (GetBuilder Counter)"),
             ),
             MaterialButton(
               color: Colors.blueAccent,
@@ -31,14 +31,14 @@ class Home extends StatelessWidget {
               onPressed: () {
                 Get.toNamed("/Page3");
               },
-              child: Text("Page3"),
+              child: Text("Page3 (GetX Double Counter)"),
             ),
             MaterialButton(
               color: Colors.blueAccent,
               onPressed: () {
                 Get.toNamed("/Page4");
               },
-              child: Text("Page4"),
+              child: Text("Page4 (GetBuilder Double Counter)"),
             ),
           ],
         ),

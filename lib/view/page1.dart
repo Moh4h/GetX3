@@ -16,7 +16,6 @@ class Page1 extends StatelessWidget {
             GetBuilder<Page1controller>(
               init: Page1controller(),
               builder: (controller) {
-                print("rebuiild");
                 return Row(
                   spacing: 16,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -36,7 +35,7 @@ class Page1 extends StatelessWidget {
                     ),
                     IconButton(
                       onPressed: () {
-                        controller.printUpdate();
+                        controller.removeCounter();
                       },
                       icon: Icon(Icons.remove, size: 36),
                     ),
