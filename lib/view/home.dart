@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx3/controller/page5Controller.dart';
 import 'package:get/get.dart';
 
 class Home extends StatelessWidget {
-  const Home({super.key});
+   Home({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,6 +40,13 @@ class Home extends StatelessWidget {
                 Get.toNamed("/Page4");
               },
               child: Text("Page4 (GetBuilder Double Counter)"),
+            ),
+            MaterialButton(
+              color: Colors.blueAccent,
+              onPressed: () {
+                Get.toNamed("/Page5");
+              },
+              child: Text("Page5 (Get.find + Get.lazyPut Counter)"),
             ),
           ],
         ),

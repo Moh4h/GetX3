@@ -3,7 +3,7 @@ import 'package:flutter_getx3/controller/page1Controller.dart';
 import 'package:get/get.dart';
 
 class Page2 extends StatelessWidget {
-  const Page2({super.key});
+   Page2({super.key});
 
   @override
   Widget build(BuildContext context) {
