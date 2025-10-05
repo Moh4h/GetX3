@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
               onPressed: () {
                 Get.toNamed("/Page1");
               },
-              child: Text("Page1 (GetBuilder Counter)"),
+              child: Text("Page1 (GetBuilder Counter + [Permanent dependency])"),
             ),
             MaterialButton(
               color: Colors.blueAccent,
