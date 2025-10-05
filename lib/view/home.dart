@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
               onPressed: () {
                 Get.toNamed("/Page2");
               },
-              child: Text("Page2"),
+              child: Text("Page2 using (Page1 Counter [controllerPage1])"),
             ),
             MaterialButton(
               color: Colors.blueAccent,

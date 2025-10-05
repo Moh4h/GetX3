@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx3/controller/page1Controller.dart';
+import 'package:get/get.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({super.key});
@@ -7,7 +9,22 @@ class Page2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.blueAccent, title: Text("Page2")),
-      body: ListView(children: []),
+      body: Center(child: ListView(shrinkWrap: true,children: [
+        GetBuilder<Page1controller>(
+          init: Page1controller(),
+                  builder: (controller) {
+                    return Center(
+                      child: Text(
+                        "${controller.counter}",
+                        style: TextStyle(
+                          fontSize: 36,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+      ])),
     );
   }
 }
